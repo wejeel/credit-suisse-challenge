@@ -1,0 +1,12 @@
+rootProject.name = 'coding.challenge'
+gradle.ext.hsqldbVersion = '2.5.0'
+//default database config
+gradle.ext.dbName = "xdb"
+gradle.ext.dbFile = "dev/database/devDB"
+gradle.ext.dbUser = "SA"
+gradle.ext.dbPassword = "password"
+gradle.ext.dbPort = 9001
+gradle.ext.dbHost = "localhost"
+gradle.ext.dbUrl = "jdbc:hsqldb:hsql://${gradle.dbHost}:${gradle.dbPort}/${gradle.dbName}"
+gradle.ext.dbDrive = "org.hsqldb.jdbc.JDBCDriver"
+
